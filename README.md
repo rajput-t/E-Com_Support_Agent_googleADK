@@ -4,7 +4,7 @@
 
 ---
 
-## 🧠 Problem Statement
+## Problem Statement
 
 In e-commerce, customers expect **instant, accurate answers** to their questions — from product availability and delivery timelines to return policies. Traditional chatbots often fail to meet these expectations. They rely on **predefined scripts**, cannot handle unstructured queries, and lack contextual memory.
 
@@ -20,7 +20,7 @@ That’s where **agents** come in.
 
 ---
 
-## 🤖 Why Agents?
+## Why Agents?
 
 Agents are intelligent systems that **think, act, and remember**. Unlike simple chatbots, agents can decide what to do next, execute functions, and integrate with tools or APIs.
 
@@ -35,15 +35,15 @@ Agents provide the flexibility to scale across multiple workflows — making the
 
 ---
 
-## 🧱 What I Created
+## What I Created
 
-### 🌟 Overview
+### Overview
 
 The **E-Com Support Agent** is a conversational AI assistant that handles product questions, order inquiries, and return policies for an online electronics retailer.
 
 It uses **Gemini 2.5 Flash Lite** (for speed and cost-efficiency) and the **Google ADK framework** to integrate multiple tools, memory, and observability into one cohesive system.
 
-### 🏗️ Architecture
+### Architecture
 
 ```
 +------------------------------------------------------+
@@ -62,7 +62,7 @@ It uses **Gemini 2.5 Flash Lite** (for speed and cost-efficiency) and the **Goog
 +------------------------------------------------------+
 ```
 
-### 🧰 Key Tools
+### Key Tools
 
 * **get_product_info(product_name):** Retrieves details like price, stock, and specs.
 * **get_order_status(order_id):** Simulates order tracking.
@@ -73,7 +73,7 @@ When a customer asks a question, the agent uses Gemini to understand intent, sel
 
 ---
 
-## 🎥 Demo
+## Demo
 
 **Example Conversation:**
 
@@ -92,7 +92,7 @@ Each response involves structured reasoning — not static replies. The agent in
 
 ---
 
-## ⚙️ The Build
+## The Build
 
 ### 1. **Setup and Environment**
 
@@ -134,8 +134,8 @@ adk eval ecom_support_agent ecom_support_agent/integration.evalset.json
 ```
 
 Results:
-✅ Tool trajectory accuracy: 1.0
-✅ Response similarity: ≥ 0.8
+Tool trajectory accuracy: 1.0
+Response similarity: ≥ 0.8
 
 ### 6. **Deployment Ready Structure**
 
@@ -143,7 +143,7 @@ Prepared the directory with `.agent_engine_config.json` and environment files fo
 
 ---
 
-## 🧪 Evaluation
+## Evaluation
 
 The agent was tested on 20 sample queries spanning product, order, and policy tasks.
 It consistently selected the correct tool and produced clear, contextually appropriate responses.
@@ -156,7 +156,7 @@ It consistently selected the correct tool and produced clear, contextually appro
 
 ---
 
-## 🧩 Technologies Used
+## Technologies Used
 
 * **Google ADK (Agent Development Kit)** – Agent creation framework
 * **Gemini 2.5 Flash Lite** – Low-latency, cost-efficient LLM
@@ -167,7 +167,7 @@ It consistently selected the correct tool and produced clear, contextually appro
 
 ---
 
-## 🌐 Architecture Flow
+## Architecture Flow
 
 ```
 User Query  →  LLM (Gemini 2.5)  →  Tool Selection  
@@ -180,7 +180,7 @@ Example:
 
 ---
 
-## 🚀 If I Had More Time
+## If I Had More Time
 
 If expanded, the next steps would include:
 
@@ -192,7 +192,7 @@ If expanded, the next steps would include:
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 The **E-Com Support Agent** showcases a practical, fully functional application of **agentic AI principles** using Google’s ADK and Gemini models. It integrates **reasoning**, **tool execution**, **memory**, and **observability** — forming a blueprint for intelligent, scalable business automation.
 
