@@ -1,0 +1,67 @@
+{
+  "eval_set_id": "ecom_support_integration_suite",
+  "eval_cases": [
+    {
+      "eval_id": "product_question_macbook",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "Tell me about the MacBook Pro 14."
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "The MacBook Pro 14\" costs $1,999 and is In Stock (22 units). It features the M3 Pro chip, 18GB RAM and a 512GB SSD."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_product_info",
+                "args": {
+                  "product_name": "MacBook Pro 14"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "order_status_basic",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "What is the status of order ORD123?"
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Order ORD123 is Shipped with DHL and is expected to arrive in 3-5 business days."
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_order_status",
+                "args": {
+                  "order_id": "ORD123"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
