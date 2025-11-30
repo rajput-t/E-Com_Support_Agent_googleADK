@@ -1,4 +1,4 @@
-# 🛒 E-Com Support Agent
+# E-Com Support Agent
 
 ### An AI Assistant for Product and Order Inquiries
 
